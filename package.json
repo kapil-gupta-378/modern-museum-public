@@ -65,5 +65,9 @@
       "plugin:storybook/recommended",
       "plugin:storybook/recommended"
     ]
+  },
+  "engines": {
+    "node": "16.x",
+    "yarn": "^1.0.0"
   }
 }
