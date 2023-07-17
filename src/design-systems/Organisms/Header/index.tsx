@@ -1,5 +1,5 @@
-import { Typography } from 'design-systems/Atoms'
+import Typography from 'design-systems/Atoms/Typography/Typography'
 
-export const Header = () => {
+export default function Header() {
   return <Typography>Header</Typography>
 }
