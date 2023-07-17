@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: 'Test Data',
 }
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return <HomePageTemplate />
 }
+
+export default HomePage

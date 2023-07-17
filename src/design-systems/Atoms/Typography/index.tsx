@@ -14,7 +14,7 @@ import { getFontFamily, getFontSize } from './utils'
  * caption: 12px
  * small: 10px
  */
-export default function Typography({ variant, size, className = '', children, tabIndex }: TypographyProps) {
+const Typography: React.FC<TypographyProps> = ({ variant, size, className = '', children, tabIndex }) => {
   const classNames = [variant && getFontFamily(variant), size && getFontSize(size), className].join(' ')
   return (
     <div className={classNames} tabIndex={tabIndex}>
@@ -22,3 +22,5 @@ export default function Typography({ variant, size, className = '', children, ta
     </div>
   )
 }
+
+export default Typography

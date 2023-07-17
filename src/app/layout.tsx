@@ -7,9 +7,9 @@ import { ThemeProvider } from 'next-themes'
 import { ToastContainer } from 'react-toastify'
 import Head from 'next/head'
 
-import NoFirstRender from 'design-systems/Atoms/NoFirstRender/NoFirstRender'
 import Header from 'design-systems/Organisms/Header'
 import Footer from 'design-systems/Organisms/Footer'
+import NoFirstRender from 'design-systems/Atoms/NoFirstRender'
 
 function Providers({ children }: PropsWithChildren) {
   return <></>

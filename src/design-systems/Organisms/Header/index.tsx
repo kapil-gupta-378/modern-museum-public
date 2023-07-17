@@ -1,5 +1,7 @@
-import Typography from 'design-systems/Atoms/Typography/Typography'
+import Typography from 'design-systems/Atoms/Typography'
 
-export default function Header() {
+const Header: React.FC = () => {
   return <Typography>Header</Typography>
 }
+
+export default Header

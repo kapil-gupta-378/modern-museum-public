@@ -1,5 +1,7 @@
-import Typography from 'design-systems/Atoms/Typography/Typography'
+import Typography from 'design-systems/Atoms/Typography'
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return <Typography>Footer</Typography>
 }
+
+export default Footer

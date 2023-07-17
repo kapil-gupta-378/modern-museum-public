@@ -1,9 +1,9 @@
-'use client'
+import React from 'react'
 import { PropsWithChildren, useState, useEffect } from 'react'
 
-import { Spinner } from '../Spinner'
+import Spinner from '../Spinner'
 
-export default function NoFirstRender({ children }: PropsWithChildren) {
+const NoFirstRender: React.FC<PropsWithChildren> = ({ children }) => {
   const [hydrated, setHydrated] = useState<boolean>(false)
 
   useEffect(() => {
@@ -22,3 +22,5 @@ export default function NoFirstRender({ children }: PropsWithChildren) {
     </>
   )
 }
+
+export default NoFirstRender
