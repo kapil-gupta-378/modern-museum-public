@@ -1,7 +1,9 @@
+import React from 'react'
 import { PropsWithChildren, useState, useEffect } from 'react'
-import { Spinner } from '../Spinner'
 
-export const NoFirstRender: React.FC<PropsWithChildren> = ({ children }) => {
+import Spinner from '../Spinner'
+
+const NoFirstRender: React.FC<PropsWithChildren> = ({ children }) => {
   const [hydrated, setHydrated] = useState<boolean>(false)
 
   useEffect(() => {
@@ -20,3 +22,5 @@ export const NoFirstRender: React.FC<PropsWithChildren> = ({ children }) => {
     </>
   )
 }
+
+export default NoFirstRender
