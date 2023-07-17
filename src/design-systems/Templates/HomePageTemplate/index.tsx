@@ -1,7 +1,7 @@
-import { Typography } from 'design-systems/Atoms'
-import { Layout } from 'design-systems/Organisms'
+import Typography from 'design-systems/Atoms/Typography/Typography'
+import Layout from 'design-systems/Organisms/Layout/Layout'
 
-export const HomePageTemplate: React.FC = () => {
+export default function HomePageTemplate() {
   return (
     <Layout>
       <Typography size="h1">Homepage</Typography>

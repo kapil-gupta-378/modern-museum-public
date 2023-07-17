@@ -4,6 +4,6 @@ export interface LayoutProps extends PropsWithChildren {
   className?: string
 }
 
-export const Layout: React.FC<LayoutProps> = ({ className = '', children }) => {
+export default function Layout({ className = '', children }: LayoutProps) {
   return <div className={`h-full w-full ${className}`}>{children}</div>
 }
